@@ -1,5 +1,5 @@
 car_collection = [
-  ["lamboo", "17"], 
+  ["", ""], 
   ["", ""]   
 ]
 
@@ -7,6 +7,7 @@ while True:
   action = input("Enter action (add, remove, new, check, find, read, or end): ")
 
   if action == "end":
+    print("See you later")
     break  
 
   elif action == "add":
