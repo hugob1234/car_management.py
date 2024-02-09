@@ -18,7 +18,7 @@ while True:
       car_collection[slot_number][0] = car_name
       car_collection[slot_number][1] = car_info
       print(car_collection)
-      x = str(car_collection) + '\n'  # Append new line character
+      x = '\n' + str(car_collection) + '\n'  # Append new line character
       with open("car.txt" , "a") as file:
         file.write(x)
     else:
