@@ -65,9 +65,6 @@ while True:
         x = '\n' + str(car_collection) + '\n'  
         with open("car.txt" , "a") as file:
           file.write(x)
-      else:
-        print("Item not found")
-        break
 
   elif action == "read":
     z = input("Which word are you looking for in the database: ")
