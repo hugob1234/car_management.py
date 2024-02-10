@@ -18,7 +18,7 @@ while True:
       car_collection[slot_number][0] = car_name
       car_collection[slot_number][1] = car_info
       print(car_collection)
-      x =  '\n' + str(car_collection) + '\n'
+      x =  '\n' + str(car_collection) + '\n'  
       with open("car.txt" , "a") as file:
         file.write(x)
     else:
@@ -53,7 +53,7 @@ while True:
   elif action == "check":
     c = int(input("Enter slot number you would like to check: "))
     print(car_collection[c])
-    x = '\n' + str(car_collection) + '\n' 
+    x = '\n' + str(car_collection) + '\n'  
     with open("car.txt" , "a") as file:
       file.write(x)
 
@@ -65,6 +65,9 @@ while True:
         x = '\n' + str(car_collection) + '\n'  
         with open("car.txt" , "a") as file:
           file.write(x)
+      else:
+        print("Item not found")
+        break
 
   elif action == "read":
     z = input("Which word are you looking for in the database: ")
@@ -73,7 +76,7 @@ while True:
       if z in car_collection[i]:
         print(f"Item found at index {i}, key info: {car_collection[i][1]}")
         found = True
-        x = '\n' + str(car_collection) + '\n' 
+        x = '\n' + str(car_collection) + '\n'  
         with open("car.txt" , "a") as file:
           file.write(x)
     if not found:
