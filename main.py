@@ -18,7 +18,7 @@ while True:
       car_collection[slot_number][0] = car_name
       car_collection[slot_number][1] = car_info
       print(car_collection)
-      x = '\n' + str(car_collection) + '\n'  # Append new line character
+      x =  '\n' + str(car_collection) + '\n'  # Append new line character
       with open("car.txt" , "a") as file:
         file.write(x)
     else:
@@ -58,7 +58,7 @@ while True:
       file.write(x)
 
   elif action == "find":
-    z = input("Which words you looking for in data base")
+    z = input("Which words you looking for in data base: ")
     for i in range(len(car_collection)):
       if z in car_collection[i]:
         print("item found")
